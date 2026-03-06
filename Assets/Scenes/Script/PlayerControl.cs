@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerControl : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //Player basic control. Mainly use for testing purpose.
     [SerializeField]
     Rigidbody2D player;
     [SerializeField]
@@ -19,7 +19,7 @@ public class PlayerControl : MonoBehaviour
         input = InputSystem.actions.FindAction("Move");
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector2 movingDirection = input.ReadValue<Vector2>();
         if(-maxMoveSpeed <= player.linearVelocityX && player.linearVelocityX <= maxMoveSpeed)
