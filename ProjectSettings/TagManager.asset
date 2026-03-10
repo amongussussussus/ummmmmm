@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Platform
   - Logic
+  - SoundFX
+  - BGM
   layers:
   - Default
   - TransparentFX
